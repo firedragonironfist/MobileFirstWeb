@@ -1,0 +1,112 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+}
+
+/* Style the navigation */
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 200px; 
+    flex: 1; 
+    min-width: 0; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #666;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #888;
+}
+
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    flex: 2; 
+    min-width: 0; 
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%; 
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+    background: linear-gradient(to bottom, #2980b9, #3498db);
+}
+
+
+@media (max-width: 480px) {
+    
+    body {
+        display: block;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    main {
+        flex: 1;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile Example</title>
+    
+    <!-- Include jQuery and jQuery Mobile CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Style the "Open Dialog" button */
+        .custom-button {
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Adjust the font size */
+        }
+
+        /* Style header and footer */
+        .custom-header, .custom-footer {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+            text-align: center; /* Center align text */
+        }
+    </style>
+</head>
+<body>
+
+<!-- First Page -->
+<div data-role="page" id="page1">
+
+    <!-- Header -->
+    <div data-role="header" class="custom-header">
+        <h1>Welcome to Page 1</h1>
+    </div>
+
+    <!-- Content -->
+    <div role="main" class="ui-content">
+        <a href="#dialog" data-rel="dialog" class="ui-btn ui-btn-b ui-icon-info ui-btn-icon-left custom-button">Open Dialog</a>
+        
+        <ul data-role="listview">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" class="custom-footer">
+        <h4>&copy; 2023 Your Company</h4>
+    </div>
+</div>
+
+<!-- Second Page (Dialog) -->
+<div data-role="page" id="dialog">
+
+    <!-- Header for Dialog -->
+    <div data-role="header" class="custom-header">
+        <h1>Dialog Box</h1>
+    </div>
+
+    <!-- Content for Dialog -->
+    <div role="main" class="ui-content">
+        <p>This is a dialog box content.</p>
+    </div>
+</div>
+
+</body>
+</html>
