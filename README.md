@@ -1,6 +1,6 @@
 ## Issues
 
-1. **Image Responsiveness in Chrome:**
+1. **Image Responsiveness in Chrome and other browsers except Firefox:**
    - To check the image responsiveness, please use Firefox browser. Chrome may have some caching issues that affect how the images are displayed. In Firefox, you should see the responsive behavior as intended.
 
 2. **Alert Dropdown for Geolocation in Chrome:**
